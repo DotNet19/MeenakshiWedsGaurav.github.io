@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meenakshi & Gaurav - The Loving Couple</title>
+<style>
+  body {
+    background-color: #EEAEA8;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #444747;
+  }
+
+img {
+  max-width: 100%;
+}
+.portrait {
+  background-color: #EBE5E0;
+  max-width: 320px;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+.text-wrap {
+  padding-top: 10px;
+}
+div.separator {
+  border-top: 1px solid;
+    clear: both;
+    display: inline-block;
+    position: relative;
+    border-color: #e05b66;
+    width: 100px;
+}
+div.sep_diamond {
+    content: "";
+    height: 10px;
+    left: 50%;
+    margin: -5px auto auto -5px;
+    position: absolute;
+    transform: rotate(-45deg);    
+  width: 10px;
+}
+.portrait-wrap {
+  text-align: center;
+}
+.head h1 {
+  color: #fff;
+  font-weight: normal;
+  font-size: 50px  
+}
+.date-wrap {text-align: center;
+padding: 40px 0;
+clear: both;
+}
+#uc_blox_line_text_divider39285 {
+  padding-top: 50px;
+}
+#uc_blox_line_text_divider39285 div.blox_hr {
+    display: inline-block;
+    width: 100%;
+    max-width: 200px;
+    background-color: #ffffff;
+    height: 1px;
+}
+#uc_blox_line_text_divider39285 div.blox_hr_txt {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 5px 10px;
+    border: 1px solid #ffffff;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    color: #ffffff;
+    text-align: center;
+    background-color: #fff;
+    }
+    p#demo {
+  text-align: center;
+  font-size: 30px;
+  margin-top:20px;  
+  color: #fff;
+}
+</style>
+</head>
+<body>
+  <div class="portrait-wrap">
+    <div class="head"><h1>The Loving Couple</h1></div>
+<div class="portrait">
+  <img src="Meenakshi-Gaurav.jpg"/>
+  <div class="text-wrap">
+    <div style="text-align:center;">
+      <div class="separator" style="border-color:#e05b66;width:100px;">
+       <div class="sep_diamond" style="background-color:#e05b66;"></div>
+      </div>
+     </div>
+    <h2>Meenakshi <br/>& <br/>Gaurav</h2>
+  </div>
+</div>
+  </div>
+  <div id="uc_blox_line_text_divider39285" style="text-align:center;">
+    <div class="blox_hr"><div class="blox_hr_txt"><span class="uc-style-38033662968" style="font-size:18px;line-height:1em;color:#000000;">
+      22 Nov, 2021 </span></div></div>
+  </div>
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Nov 22, 2021 22:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+</body>
+</html>
